@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex h-screen">
+    
+    <nav class="bg-blue-800 text-white p-4 shadow-md w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Maré em Ascensão</h1>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-gray-300">Início</a>
+                <a href="login.html" class="bg-blue-500 py-2 px-4 rounded-full hover:bg-blue-600">Login</a>
+                <a href="register.html" class="bg-blue-500 py-2 px-4 rounded-full hover:bg-blue-600">Registre-se</a>
+                <a href="graph1.html" class="hover:text-gray-300">Gráficos</a>
+            </div>
+        </div>
+        <div class="container mx-auto p-8 mt-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-center text-blue-800 mb-6">
+            Maré em Ascensão: Uma Análise sobre o Aumento do Nível do Mar de 1993 a 2024
+        </h2>
+
+        <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Introdução</h3>
+            <p class="text-gray-700 leading-relaxed">
+                O aumento do nível do mar é uma das principais consequências das mudanças climáticas globais, causado pelo derretimento das calotas polares e expansão térmica dos oceanos. Este fenômeno ameaça ecossistemas costeiros, comunidades humanas e infraestruturas em todo o mundo. O Brasil, com mais de 7.400 km de costa, enfrenta desafios crescentes relacionados à elevação do nível do mar.
+            </p>
+        </div>
+
+        <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Objetivos</h3>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Analisar os impactos do aumento do nível do mar em ecossistemas costeiros e comunidades humanas.</li>
+                <li>Demonstrar a tendência histórica de elevação através de dados científicos de 1993 a 2024.</li>
+                <li>Propor soluções de adaptação baseadas em evidências.</li>
+            </ul>
+        </div>
+        
+        </div>
+    </nav>
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+        <form id="loginForm">
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700">Usuário:</label>
+                <input type="text" id="username" class="mt-1 p-2 w-full border rounded-md" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700">Senha:</label>
+                <input type="password" id="password" class="mt-1 p-2 w-full border rounded-md" required>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Entrar</button>
+        </form>
+        <p class="mt-4 text-center">Não tem uma conta? <a href="register.html" class="text-blue-500 hover:underline">Registre-se</a></p>
+    </div>
+</body>
+</html>

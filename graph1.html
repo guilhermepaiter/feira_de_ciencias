@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico 1 - Aumento do Nível do Mar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-blue-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Maré em Ascensão</h1>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-gray-300">Início</a>
+                <a href="login.html" class="bg-blue-500 py-2 px-4 rounded-full hover:bg-blue-600">Login</a>
+                <a href="register.html" class="bg-blue-500 py-2 px-4 rounded-full hover:bg-blue-600">Registre-se</a>
+                <a href="graph1.html" class="hover:text-gray-300">Gráficos</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mx-auto p-8 mt-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center text-blue-800 mb-6">
+            Aumento do Nível do Mar (1993-2024)
+        </h2>
+        <p class="text-center text-gray-600 mb-4">
+            Os dados de 1993 a 2024 mostram elevação consistente do nível do mar global, com aumento de 10 centímetros em três décadas e taxa média de 3,3 mm por ano.
+        </p>
+
+        <div class="mx-auto" style="max-width: 800px;">
+            <canvas id="seaLevelChart"></canvas>
+        </div>
+    </div>
+
+    <script src="js/charts.js"></script>
+</body>
+</html>
